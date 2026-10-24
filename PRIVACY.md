@@ -1,12 +1,12 @@
 # Flux Monitor Privacy Policy
 
-Last updated: October 6, 2026.
+Last updated: October 24, 2026.
 
 ## Scope
 
 Flux Monitor is developed by Matthew Hakes. This policy covers the Windows standalone Free application and Flux Monitor Beta intended for distribution through Microsoft Store. Features available in your edition determine which activities below apply.
 
-This revision describes the Windows beta candidate prepared on October 6, 2026. Earlier versions can retain the older storage behavior described below.
+This revision describes the unreleased Windows beta candidate, including Storage Explorer development. Earlier versions can retain the older storage behavior described below.
 
 Flux processes hardware information on your computer to display system readings. The application has no built-in advertising, usage analytics, or automatic upload of diagnostic logs to the developer. Optional remote monitoring sends readings directly to another computer; standalone update checks contact GitHub.
 
@@ -16,7 +16,13 @@ Flux reads CPU and GPU models, utilization, temperatures, clock speeds, core cou
 
 Flux stores your preferences, custom labels, window positions, selected drives and adapters, appearance presets, and remote connection settings. Remote settings include device labels, addresses, ports, and pairing credentials. These names, addresses, and paths can contain identifying information.
 
-The Utilities window picker reads visible window titles so you can select a snapping exclusion. Titles can include document or website names. Rules you save are stored in your settings. Window titles are not included in remote sensor snapshots.
+The Snap Exclusions window picker reads visible window titles so you can select a snapping exclusion. Titles can include document or website names. Rules you save are stored in your settings. Window titles are not included in remote sensor snapshots.
+
+Storage Explorer reads local folder names, file names, paths, sizes and filesystem metadata to build an in-memory usage map. It does not read file contents. These scan results are not included in remote sensor snapshots or uploaded by Flux. Closing the utility cancels an active scan; its completed map can remain in application memory until replaced or Flux closes.
+
+Pro cleanup reads timestamps, attributes and file/volume identifiers to review eligible temporary files and validate the targets before removal. Manual Recycle Bin cleanup asks Windows for item counts and sizes. Windows performs administrator-approved system cleanup. Automatic cleanup is off by default; the current candidate schedules only aged current-user temporary files while Flux runs. Cleanup is destructive and does not create a backup.
+
+Flux stores cleanup preferences, schedule timestamps, a pending-operation record and recent cleanup results in the local configuration folder. Results can contain paths, Windows errors and operation names, but not file contents. History is capped at 50 records and 256 KiB; older results are dropped when needed to meet either cap. An unresolved pending record is retained to prevent an unsafe automatic retry. These records are not additionally DPAPI-encrypted and are not uploaded by Flux. Windows servicing tools may keep their own logs independently.
 
 Flux writes local diagnostic logs for startup, window behavior, and runtime troubleshooting. Additional diagnostics can include connection addresses, errors, and hardware details. These logs are not automatically uploaded by Flux. Review diagnostic files before sharing them with anyone.
 
