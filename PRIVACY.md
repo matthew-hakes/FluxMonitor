@@ -1,6 +1,6 @@
 # Flux Monitor Privacy Policy
 
-Last updated: October 24, 2026.
+Last updated: November 9, 2026.
 
 ## Scope
 
@@ -20,9 +20,9 @@ The Snap Exclusions window picker reads visible window titles so you can select 
 
 Storage Explorer reads local folder names, file names, paths, sizes and filesystem metadata to build an in-memory usage map. It does not read file contents. These scan results are not included in remote sensor snapshots or uploaded by Flux. Closing the utility cancels an active scan; its completed map can remain in application memory until replaced or Flux closes.
 
-Pro cleanup reads timestamps, attributes and file/volume identifiers to review eligible temporary files and validate the targets before removal. Manual Recycle Bin cleanup asks Windows for item counts and sizes. Windows performs administrator-approved system cleanup. Automatic cleanup is off by default; the current candidate schedules only aged current-user temporary files while Flux runs. Cleanup is destructive and does not create a backup.
+When you choose Show in Explorer, Flux passes the selected local path to Windows Explorer so it can show that item. Flux does not send that path to its remote peers or any online service. The current beta-development build does not run scheduled storage cleanup or permanently delete items from Storage Explorer.
 
-Flux stores cleanup preferences, schedule timestamps, a pending-operation record and recent cleanup results in the local configuration folder. Results can contain paths, Windows errors and operation names, but not file contents. History is capped at 50 records and 256 KiB; older results are dropped when needed to meet either cap. An unresolved pending record is retained to prevent an unsafe automatic retry. These records are not additionally DPAPI-encrypted and are not uploaded by Flux. Windows servicing tools may keep their own logs independently.
+Earlier builds can retain cleanup preferences, schedule timestamps, pending-operation records and results in the local configuration folder. These records can contain paths, Windows errors and operation names, but not file contents. Flux does not upload them or apply additional DPAPI encryption to them. Windows servicing tools can keep separate logs.
 
 Flux writes local diagnostic logs for startup, window behavior, and runtime troubleshooting. Additional diagnostics can include connection addresses, errors, and hardware details. These logs are not automatically uploaded by Flux. Review diagnostic files before sharing them with anyone.
 
@@ -71,6 +71,8 @@ Flux appends diagnostic logs locally and replaces an oversized main diagnostic l
 The Store beta helper exits when its widget process ends. Flux does not persist that helper's reading cache or Store ownership state between app sessions. Setup diagnostics have separate lifetimes. The shared PawnIO driver remains installed after Flux closes.
 
 You can inspect or remove local configuration files while Flux is closed, turn off broadcasting, regenerate pairing credentials, remove remote entries, and disable automatic standalone update checks. Removing configuration resets preferences; remove backups and clipboard copies separately when needed.
+
+Do not delete a cleanup record to infer that an earlier operation finished. Deleting the record does not establish what happened to the files.
 
 ## Contact and changes
 
