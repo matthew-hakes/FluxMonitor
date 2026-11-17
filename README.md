@@ -149,5 +149,8 @@ remove `~/Library/LaunchAgents/com.matthewhakes.flux.plist` if startup was enabl
 
 ## License
 
-© 2026 Matt Hakes. Free to download, install, and use for personal, non-commercial
-use. Redistribution requires prior written permission. See [`LICENSE`](LICENSE).
+© 2026 Matthew Hakes. Flux Monitor is proprietary software, licensed, not sold, under the End User License Agreement in [`LICENSE`](LICENSE) (v2.3, November 17, 2026). Free permits personal and internal business use, including monitoring servers (for example Windows Server) you own or are authorized to manage; on Windows, payment unlocks Pro features through the Microsoft Store only. Organizations may deploy the unmodified standalone Free installer internally; public redistribution or mirroring requires prior written permission. The license does not promise compatibility with any particular system.
+
+The standalone installer is not code-signed, so SmartScreen or antivirus software may warn about it. Flux is provided as is, to the extent the law allows. Hardware readings can be wrong and must not be relied on for safety. The terms are governed by Tennessee law, subject to the mandatory consumer law where you live. Third-party components keep their own licenses. Each release states the license and privacy terms that apply to it.
+
+The Microsoft Store edition is licensed under Microsoft's standard application license terms instead; the `LICENSE` file here governs the standalone downloads (GitHub and winget).

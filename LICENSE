@@ -1,90 +1,164 @@
-Flux — Personal Use License
+Flux Monitor End User License Agreement
 
-Version 1.0, June 2026
-Copyright (c) 2026 Matt Hakes
+Version 2.3 - November 17, 2026
+Copyright (c) 2026 Matthew Hakes. All rights reserved.
 
-This software and its source code are made publicly available for viewing and
-are licensed — not sold — to you under the terms below. This is NOT open-source
-software. All rights not expressly granted here are reserved.
+## 1. Parties and acceptance
 
+These terms are between you and Matthew Hakes, an individual developer based in Tennessee, United States, who publishes Flux Monitor ("Flux", "the publisher", "we"). They apply to the versions of Flux supplied with these terms. Flux is licensed, not sold.
 
-1. PERMITTED USE
+Read these terms before you install or use Flux. By installing or using this version you accept them. If you do not accept them, do not install or use this version. If you are using Flux for an organization, you confirm that you may accept these terms for it.
 
-You may, for your own personal and non-commercial use only:
+Purchase remedies and refunds remain subject to applicable law and the terms of your purchase channel. Nothing in these terms limits a right that the law where you live gives you and does not allow a contract to remove. Where that law applies, it takes priority over any conflicting part of these terms.
 
-  (a) View and read the source code.
-  (b) Download, build, and run the software.
-  (c) Modify the source code for your own personal use.
+## 2. Installation and permitted use
 
+The publisher grants you a nonexclusive, nontransferable license to install and use Flux for personal purposes and your organization's internal business purposes, including monitoring computers and servers (for example Windows Server machines) that you own or are authorized to manage. Use Flux only on computers you own or have permission to manage. This permission does not promise that Flux works on any particular system or version of Windows.
 
-2. RESTRICTIONS
+You may download Flux from the publisher's official distribution channels: the Microsoft Store listing, the official FluxMonitor GitHub releases, and WinGet manifests that retrieve the official installer. This permits those download references, not unauthorized public mirrors.
 
-Without the prior written permission of the copyright holder, you may not:
+You may make reasonable backup copies. You may deploy the standalone Free edition internally within your organization, with its notices and license intact. This permission does not authorize public hosting, resale, or supply as part of a third-party product or managed service.
 
-  (a) Redistribute, publish, share, mirror, host, sublicense, or sell the
-      software or its source code — in whole or in part, original or modified,
-      in source or binary form — by any means or medium.
-  (b) Make the software, or any modified or derivative version of it, available
-      to any third party.
-  (c) Use the software or any derivative of it for commercial purposes,
-      including but not limited to selling, licensing, or bundling it with a
-      product or service.
+For Microsoft Store copies, installation and account use also follow the applicable Microsoft Store usage rules and the entitlement acquired. These terms do not grant additional Store accounts, device entitlements, or transferable Pro licenses.
 
-Note: Forking this repository on GitHub is permitted solely as a function of
-the GitHub platform and does not grant any rights beyond those stated in this
-license. Forked copies remain subject to all restrictions above.
+## 3. Free and Pro editions
 
+The Windows standalone Free edition and the Microsoft Store Free edition provide the features identified as Free in the supplied version. Both Free editions permit personal and internal business use without purchasing Pro. Payment unlocks Pro features; business use alone does not require Pro.
 
-3. CONTRIBUTIONS
+The Microsoft Store Pro add-on unlocks the Pro features identified in its offer. Microsoft Store manages its acquisition and ownership. Pro access requires a valid entitlement for the corresponding Store product. The Windows standalone Free edition does not accept Store Pro activation codes or import that entitlement. On Windows, the publisher does not currently offer Pro through any channel other than the Microsoft Store.
 
-No rights are granted to any contribution. The copyright holder is under no
-obligation to accept, review, or incorporate any submitted change. Any
-contribution submitted to this project is provided under the terms of this
-license, and the copyright holder retains sole discretion over its use.
+Flux Monitor Beta and a later production Store product can have different identities. A Beta entitlement does not promise a production entitlement unless the publisher expressly includes that right in the offer. No future price or paid upgrade follows from these terms alone.
 
+The price and purchase conditions displayed before checkout govern a purchase, subject to applicable law. These terms do not authorize recurring charges. Refund, cancellation, and consumer rights remain subject to the purchase terms and applicable law. These terms do not add a refund promise of their own.
 
-4. PATENTS
+## 4. Business deployment and enterprise services
 
-No patent rights are granted under this license. The copyright holder reserves
-all patent rights in the software.
+A Pro purchase does not grant an organization-wide or site license. Flux does not currently offer volume activation, centralized license administration, shared activation keys, or off-Store Pro activation.
 
+No enterprise service-level agreement, guaranteed support response time, or compatibility with every managed environment is included. Any additional rights or support commitments require a separate written agreement. These terms do not promise that such an agreement is available.
 
-5. TERMINATION
+## 5. Proprietary rights and restrictions
 
-This license is effective until terminated. Your rights under this license
-terminate automatically and immediately if you breach any of its terms. Upon
-termination, you must cease all use of the software and destroy any copies in
-your possession.
+The publisher reserves rights in Flux's proprietary application code and assets that these terms do not expressly grant. This license grants no general right to obtain, publish, or redistribute that source code.
 
+Except where section 6 or applicable law permits otherwise, you may not:
 
-6. ASSIGNMENT
+1. Publish, sell, sublicense, rent, or publicly redistribute proprietary Flux binaries or source code without written permission.
+2. Modify, decompile, disassemble, or reverse engineer proprietary Flux components.
+3. Bypass, disable, or tamper with Pro entitlement checks, or use another person's Store entitlement without authorization.
+4. Remove copyright, license, or other attribution notices.
+5. Use Flux to access, monitor, or collect information from a computer or network without the permission of its owner or operator.
 
-You may not assign, transfer, or delegate any of your rights or obligations
-under this license to any other person or entity, whether by operation of law
-or otherwise, without the prior written consent of the copyright holder.
+You may share links to the publisher's official download pages. These restrictions do not prevent use of settings, appearance features, or other customization that Flux provides.
 
+## 6. Third party components and reserved rights
 
-7. GOVERNING LAW
+The publisher separately licenses Flux CPU Backend and its thin sensor adapter under MPL-2.0. The license exceptions in this section apply to that component as well as third-party components. Its corresponding source, notices and build instructions accompany Windows distributions in THIRD-PARTY-LICENSES.zip under flux-cpu-backend-source. Source access does not require Pro. This grant does not extend to unrelated proprietary Flux files or assets.
 
-This license shall be governed by and construed in accordance with the laws of
-the State of Tennessee, United States, without regard to its conflict of law
-provisions. Any legal action arising under this license shall be brought
-exclusively in the state or federal courts located in Tennessee.
+Third-party components retain their own licenses and notices. Refer to the third-party notices supplied with your edition. Windows packages include THIRD-PARTY-NOTICES.txt and THIRD-PARTY-LICENSES.zip; macOS packages include THIRD-PARTY-LICENSES.txt. Those licenses control the covered components if these terms conflict with them.
 
+Nothing in these terms restricts copying, modification, redistribution, source access, or other rights that an applicable third-party license grants. Where LGPL terms apply to a combined work, these terms permit modification for your own use and reverse engineering to debug those modifications. This exception takes priority over the restrictions above.
 
-8. SEVERABILITY
+An exception required by law or a third-party license does not grant unrelated rights in proprietary Flux code. Rights to covered third-party source do not depend on acquiring Pro.
 
-If any provision of this license is held to be unenforceable or invalid, that
-provision shall be modified to the minimum extent necessary to make it
-enforceable, or if modification is not possible, severed from this license. All
-remaining provisions shall continue in full force and effect.
+The official PawnIO installer and PawnIO driver are third-party software with their own terms. Their inclusion does not transfer ownership of PawnIO or imply that its publisher endorses Flux. The publisher does not make promises about PawnIO on its author's behalf.
 
+## 7. Microsoft runtime components
 
-9. DISCLAIMER
+Windows editions incorporate proprietary Microsoft C/C++ runtime code into Flux. This agreement permits use of that incorporated code only with Flux on Microsoft Windows. It grants no separate right to extract, modify, distribute, decompile, disassemble, or reverse engineer that code. Exceptions under applicable law and the "Third party components and reserved rights" section remain effective, including applicable LGPL debugging rights. Preserve applicable copyright, trademark, patent, and other notices. Microsoft and its suppliers retain their rights. Support or additional warranties offered by the Flux publisher do not bind Microsoft or its suppliers.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
-CONNECTION WITH THE SOFTWARE OR ITS USE OR OTHER DEALINGS IN THE SOFTWARE.
+## 8. Microsoft Store
+
+If you obtain Flux or Pro from the Microsoft Store, these terms are between you and the publisher. Microsoft is not a party to them. Microsoft's own Store terms govern your Store account, payment, and Store licensing; these terms govern your use of Flux. If the Store's mandatory terms conflict with these terms on a Store matter, the Store's terms apply to that matter.
+
+## 9. Hardware readings are not safety controls
+
+Flux displays readings reported by hardware, firmware, drivers, and the operating system. Sensor availability and accuracy depend on hardware, firmware, drivers, and permissions. Readings can be unavailable, delayed, or incorrect. Do not use Flux as the sole control for safety-critical systems or protection against hardware damage. Alerts and thresholds are conveniences and can fail to appear.
+
+Do not rely on Flux to prevent overheating, data loss, equipment damage, or personal injury, or for any medical, life-support, industrial-control, or other use where a failure could cause harm.
+
+## 10. System changes, drivers and administrator actions
+
+Some Flux features change your system. Depending on edition and the options you choose, Flux or its installer can add a startup entry, add or remove a Windows Firewall rule for remote sharing, install a Windows sensor service, start an elevated sensor helper, and run the official PawnIO installer. Actions that need administrator rights proceed only after Windows administrator approval. Flux identifies those actions in its interface.
+
+On Windows, CPU temperature readings require the third-party PawnIO kernel driver. The standalone installer offers PawnIO as an unticked option, and either edition can set it up later, only after you approve it in Flux. You can decline administrator approval; CPU temperature readings are then unavailable. A kernel driver runs with high privileges. You decide whether to approve it on each computer, and you are responsible for approving it only where you are allowed to. The shared PawnIO driver can remain installed after Flux closes or is removed, and other software may use it. Manage or remove it separately in Windows.
+
+## 11. Storage cleanup and deletion
+
+Pro storage tools can permanently delete data when you instruct them to. Depending on the version, they can delete selected temporary files from your user temporary folder, run a temporary-file cleanup on a schedule you turn on, empty the Recycle Bin of a drive you select, and run Windows component-cleanup commands. One of those commands removes the ability to go back to a previous Windows installation. Items removed by these tools may not be recoverable by Flux, by the Recycle Bin, or otherwise.
+
+These tools act only on your instruction, including a schedule you enable. Review what you select before you confirm. You are responsible for the choices you make and for keeping backups of anything important. Flux does not promise that a cleanup will free a particular amount of space or finish every item.
+
+## 12. Remote sharing and pairing
+
+Remote sharing is off until you turn it on. When it is on, Flux shares this computer's sensor readings, including drive and network-adapter names, over your network with viewers you pair or give a key to. You are responsible for deciding who may view your computer and for the network you share on.
+
+Only enable remote broadcasting on systems and networks you are authorized to monitor. Protect pairing credentials and obtain any permissions required to share readings. Keep pairing codes and keys confidential. Remove viewers you no longer trust, and regenerate keys if a key may have been exposed. Pairing codes, keys, and viewer lists stay on the computers involved; the publisher cannot see, reset, or recover them. Firewalls, VPNs, routing, and port forwarding outside Flux can change who can reach a shared computer.
+
+## 13. Downloads, installer warnings and updates
+
+The standalone installer is not code-signed. Windows SmartScreen, antivirus, or other security software may warn about it, block it, or quarantine it. The publisher cannot promise that any security product will accept Flux. Download Flux only from the official channels in section 2 and compare the published SHA-256 checksum before running the installer. A checksum published with the same release confirms that the file is intact, not who published it.
+
+The standalone edition can check GitHub for new versions as described in the Privacy Policy. It installs an update only after you choose to. Microsoft Store manages updates for Store editions. Updates may add, change, or remove features. The publisher is not required to provide updates, and may stop providing a version, edition, or distribution channel, subject to applicable law and any rights you already paid for.
+
+## 14. Beta versions
+
+A version marked Beta is for evaluation. It may contain defects, incomplete features, and changes between releases. Back up important data before testing. Do not use a Beta version on systems where a defect would cause serious harm.
+
+An invitation controls access to the private Beta distribution. Evaluation access does not promise a future release date or ongoing Beta program. Ending Beta distribution does not remove statutory remedies or override rights promised with a paid purchase.
+
+## 15. Privacy
+
+The Flux Monitor Privacy Policy explains local storage, optional remote sharing, updates, Store processing, and user choices. Windows packages include it as PRIVACY.txt. This license does not provide blanket consent for unrelated data processing.
+
+## 16. Feedback and contributions
+
+You do not have to send the publisher feedback, bug reports, suggestions, or code ("contributions"). If you do, you confirm that you have the right to send them, and you give the publisher a nonexclusive, worldwide, royalty-free, perpetual, and irrevocable license to use, copy, modify, and distribute them for any purpose, without payment or attribution. The publisher has no obligation to review, accept, or use any contribution. No rights are granted to you in Flux because you sent a contribution.
+
+## 17. Patents and trademarks
+
+No patent rights are granted under this license except as needed to use Flux as these terms allow. The publisher reserves all other patent rights in Flux, subject to any rights a third-party license grants in its own components. These terms grant no rights in the names Flux or Flux Monitor, or in any logo, beyond accurately referring to the software.
+
+## 18. Export and sanctions
+
+You must comply with the export control and sanctions laws of the United States and of any other country that apply to you. Do not download, use, or provide Flux where or to anyone that those laws prohibit.
+
+## 19. Warranty disclaimer
+
+TO THE EXTENT APPLICABLE LAW PERMITS, FLUX IS PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NONINFRINGEMENT, ACCURACY OF READINGS, OR UNINTERRUPTED OR ERROR-FREE OPERATION. THE PUBLISHER DOES NOT WARRANT THAT FLUX WILL BE COMPATIBLE WITH YOUR HARDWARE OR SOFTWARE, THAT SECURITY SOFTWARE WILL ACCEPT IT, OR THAT DEFECTS WILL BE CORRECTED.
+
+Some places do not allow some of these exclusions. This section does not exclude warranties, guarantees, or conditions that applicable law makes mandatory. Where those apply, they are limited to the minimum period and extent the law allows.
+
+## 20. Limitation of liability
+
+TO THE EXTENT APPLICABLE LAW PERMITS, THE PUBLISHER IS NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOSS OF DATA, FILES, PROFITS, REVENUE, BUSINESS, OR GOODWILL, OR FOR HARDWARE DAMAGE, ARISING FROM OR RELATED TO FLUX OR THESE TERMS, EVEN IF THE PUBLISHER WAS TOLD THEY WERE POSSIBLE.
+
+TO THE EXTENT APPLICABLE LAW PERMITS, THE PUBLISHER'S TOTAL LIABILITY FOR ALL CLAIMS ARISING FROM OR RELATED TO FLUX OR THESE TERMS IS LIMITED TO THE GREATER OF (A) THE AMOUNT YOU PAID FOR FLUX AND PRO IN THE TWELVE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM, AND (B) FIFTY UNITED STATES DOLLARS (US $50).
+
+These limits apply whatever the legal theory, including contract, tort, negligence, or statute. Nothing excludes or limits liability for fraud, deliberate misconduct, death or personal injury caused by negligence, or other liability that applicable law does not allow the publisher to exclude or limit. Nothing removes mandatory consumer remedies, including applicable repair, replacement, or refund rights.
+
+## 21. Termination and continuing rights
+
+You may end your use by uninstalling Flux. Subject to applicable law, the publisher may terminate this license for a material breach that remains uncorrected after notice and a reasonable opportunity to correct it. If correction is impossible, termination remains subject to applicable law.
+
+After valid termination, stop using the affected proprietary Flux copy and remove it. Third-party license rights, statutory rights, and rights that must survive termination remain unaffected. Termination does not authorize deletion of your personal files by the publisher. Sections 5, 6, 9, and 16 through 24 survive termination to the extent they are meant to.
+
+## 22. Governing law and courts
+
+These terms are governed by the laws of the State of Tennessee, United States, without regard to its conflict-of-law rules. The United Nations Convention on Contracts for the International Sale of Goods does not apply. Subject to the next paragraph, any legal action arising from these terms or Flux must be brought only in the state or federal courts located in Tennessee, and both parties consent to those courts.
+
+Mandatory laws and consumer protections that apply where you live remain effective and take priority over the preceding paragraph. If you are a consumer, nothing in this section deprives you of the protection of the mandatory laws of the place where you live or of any right you have to bring a claim in your local courts. These terms impose no mandatory arbitration or class-action waiver.
+
+## 23. Changes to these terms
+
+The publisher may revise these terms for later versions of Flux. A revision is presented with the version it applies to, for example in the installer, in Help, in the package as LICENSE.txt, or on the Store listing, and shows a new version number and date. A later license revision applies only as lawfully presented and accepted; it does not silently withdraw rights already granted for an earlier version.
+
+## 24. General
+
+These terms, together with the third-party licenses and Privacy Policy they refer to and any purchase terms that apply, are the entire agreement between you and the publisher about Flux. They replace earlier statements about the same subject, except for rights an earlier version already granted you for the copy supplied with it.
+
+If a court finds part of these terms unenforceable, that part is enforced to the extent allowed and the rest remains in effect. A failure or delay in enforcing a term is not a waiver. You may not assign or transfer these terms or your license without the publisher's written consent, except where mandatory law does not allow this restriction. The publisher may transfer these terms to a successor to Flux, if your rights under them are not reduced.
+
+## 25. Contact
+
+Contact the publisher at Matthew.Hakes@outlook.com, or at any replacement address published on the official FluxMonitor GitHub page, with licensing, privacy, or support questions. Support and hardware coverage depend on the supplied version and any separate promises in the applicable offer. These terms alone do not promise a support response time or compatibility with every device.
