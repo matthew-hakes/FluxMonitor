@@ -3,28 +3,25 @@
 Desktop system-monitor widgets for CPU, GPU, RAM, network, disk, and clock information.
 This repository provides downloads and documentation. Application source is private.
 
-[![Release](https://img.shields.io/badge/release-v1.3.0-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases)
+[![Release](https://img.shields.io/badge/release-v1.3.5-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases)
 
 ## Release status
 
-The latest published download is **v1.3.0**. Refer to its
-[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.0)
-for that version's features and installation information.
+The latest Windows download is the standalone Free **v1.3.5**. Refer to its
+[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.5)
+for what changed. The Microsoft Store beta is in private testing; it and its Pro
+upgrade are not publicly available yet.
 
-A new Windows candidate is under audit. The planned edition model below applies
-to that candidate, not to the existing v1.3.0 downloads. **The Microsoft Store
-beta and its Pro upgrade are not available yet.**
-
-The published macOS release remains available. The Windows audit does not qualify
-new macOS changes or change that release's feature set.
+The macOS release stays on
+[v1.3.0](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.0).
 
 <a id="free-and-pro"></a>
 
 ## Editions
 
-### Planned Windows editions — not released yet
+### Windows editions
 
-The next Windows release has two feature tiers: Free and Pro. Standalone Free
+Windows has two feature tiers: Free and Pro. Standalone Free
 and Store Free share the same Free monitoring features. Installation, update
 delivery, and Store purchase options differ.
 
@@ -55,28 +52,38 @@ available. Other palettes stay hidden from the theme picker until enabled.
 Hover over Preview to try a palette. Move away to restore the current colors.
 Color controls preserve the selected skin and fonts.
 
-Standalone updates will use this GitHub release channel. Store installations
-will receive updates through Microsoft Store; their settings will show a
-changelog instead of a separate updater.
+Standalone updates use this GitHub release channel. Store installations
+receive updates through Microsoft Store; their settings show a changelog
+instead of a separate updater.
 
-### Planned Windows remote monitoring
+### Windows remote monitoring
 
 LAN broadcasting is optional and available in Free. Remote viewing requires Pro.
-The viewer uses an explicitly added device address and handshake key; do not
-expect automatic discovery. Connections use TLS, certificate pinning, and
-handshake-key authentication. Enable sharing only on a trusted local network.
+A viewer is added by its device address and paired with a one-time code shown on
+the shared computer (or the older shared handshake key, which can be switched
+off). There is no automatic discovery. Connections use TLS with certificate
+pinning, and each paired viewer has its own key that can be removed at any time.
+Enable sharing only on a trusted local network, and only for computers you are
+authorized to monitor.
 
 ## Install the published release
 
 ### Windows
 
-Download `flux-setup-free-v1.3.0.exe` and its matching `.sha256` from
-[Releases](https://github.com/matthew-hakes/FluxMonitor/releases).
+Download `flux-setup-free-v1.3.5.exe` and its matching `.sha256` from
+[Releases](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.5).
 Compare the downloaded file's SHA-256 value with the published checksum:
 
 ```powershell
-Get-FileHash .\flux-setup-free-v1.3.0.exe -Algorithm SHA256
+Get-FileHash .\flux-setup-free-v1.3.5.exe -Algorithm SHA256
 ```
+
+- SHA-256: `BD306BF12CB5B39EC69B562E98C5E3374FE96F27AF70A8CF7B1DD66EF1314515`
+- VirusTotal: **0 / 71** — [view the scan](https://www.virustotal.com/gui/file/bd306bf12cb5b39ec69b562e98c5e3374fe96f27af70a8cf7b1dd66ef1314515)
+
+CPU temperature needs the optional third-party PawnIO driver. Tick it in setup,
+use **Temp: set up** on the CPU tile later, or add `--with-cpu-temp` to a silent
+install.
 
 The standalone installer is unsigned. A matching checksum checks file integrity;
 it does not identify a trusted Windows publisher or guarantee safety. Download
@@ -89,8 +96,8 @@ will follow catalog verification and installation testing.
 
 ### macOS v1.3.0
 
-1. Download `Flux-Monitor-Free-v1.3.0-macOS-arm64.dmg` and its `.sha256` from
-   [Releases](https://github.com/matthew-hakes/FluxMonitor/releases).
+1. Download `Flux-Monitor-Free-v1.3.0-macOS-arm64.dmg` and its `.sha256` from the
+   [v1.3.0 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.0).
 2. Verify the disk image:
 
    ```bash
