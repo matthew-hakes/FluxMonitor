@@ -19,7 +19,7 @@ This revision was checked against the Windows code only. It does not describe ma
 
 **Hardware readings.** Flux reads CPU and GPU models, utilization, per-core usage, temperatures, clock speeds, core and thread counts, graphics memory use, available fan readings, system memory use and characteristics, drive information, and network-interface traffic counters. Drive information includes names or labels, mount paths, capacity, transfer rates, and available temperatures. Network information includes adapter names, transfer rates, and cumulative byte counters. Sensor availability varies by hardware and permissions.
 
-**Settings.** Flux stores your preferences, custom labels, window positions, selected drives and adapters, appearance presets, storage-tool options and schedules, the time of the last update check, and remote connection settings. Remote settings include device labels, addresses, ports, and pairing credentials. Names, addresses, and paths can contain identifying information.
+**Settings.** Flux stores your preferences, custom labels, window positions, selected drives and adapters, appearance presets, any storage-tool options left by earlier builds, the time of the last update check, and remote connection settings. Remote settings include device labels, addresses, ports, and pairing credentials. Names, addresses, and paths can contain identifying information.
 
 **Snap Exclusions.** To build its list, the Snap Exclusions picker asks Windows for the titles of visible windows. It lists and saves only Flux's own windows; titles of other programs are discarded and not stored. Rules you save are stored in your settings. Window titles are not included in remote sensor snapshots.
 
@@ -27,14 +27,9 @@ This revision was checked against the Windows code only. It does not describe ma
 
 When you choose Show in Explorer, Flux passes the selected local path to Windows Explorer so it can show that item. Flux does not send that path to remote viewers or any online service.
 
-In Pro, storage tools can permanently delete data when you instruct them to:
+The current release does not offer storage cleanup. It does not delete files, empty the Recycle Bin, run Windows component cleanup, or run scheduled cleanup, and it does not start a cleanup schedule saved by an earlier build.
 
-- delete temporary files older than seven days from your own user temporary folder, after you review and confirm the list;
-- run that temporary-file cleanup automatically on a daily or weekly schedule that you turn on, while Flux is running, without asking again each time;
-- empty the Recycle Bin of a drive you select; and
-- run Windows component-cleanup commands, with Windows administrator approval. One of them removes the ability to go back to a previous Windows installation.
-
-Deleted items are not moved to the Recycle Bin and may not be recoverable. Flux records pending cleanup operations and a history of results (time, operation name, result, and error details) in its configuration folder so it can report what happened. These records can contain paths and Windows error text, but not file contents. Flux does not upload them or apply additional encryption to them. Windows servicing tools can keep their own logs. Do not delete a cleanup record to infer that an earlier operation finished; deleting the record does not establish what happened to the files.
+Earlier development builds offered cleanup tools. If you used one, its cleanup preferences, schedule times, pending-operation records and result history (time, operation name, result, and error details) can remain in Flux's configuration folder. These records can contain paths and Windows error text, but not file contents. Flux does not upload them or apply additional encryption to them. Windows servicing tools can keep their own logs.
 
 **Diagnostic logs.** Flux writes a local diagnostic log about startup, window behavior, and runtime problems. It can include timestamps, connection addresses (including the address of a computer that pairs for remote viewing), error messages, and hardware details. Flux does not upload logs. Review diagnostic files before sharing them with anyone, including us.
 
