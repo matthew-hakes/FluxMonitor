@@ -1,81 +1,115 @@
 # Flux Monitor Privacy Policy
 
-Last updated: November 9, 2026.
+Last updated: November 17, 2026.
+
+## Summary
+
+- Flux Monitor ("Flux") is a desktop system monitor made by Matthew Hakes, an individual developer in Tennessee, United States ("we", "us").
+- Flux reads hardware and system information on your computer to show it to you. That processing happens on your computer.
+- Flux has no user accounts, no built-in advertising, no usage analytics, no crash reporting service, and no automatic upload of logs to us. We do not receive the readings Flux displays, and we do not sell or share personal information.
+- Information leaves your computer only in these cases: standalone update checks and downloads from GitHub; Microsoft Store licensing and purchases in the Store edition; remote sharing that you turn on, which sends readings directly to computers you pair; and websites you choose to open.
 
 ## Scope
 
-Flux Monitor is developed by Matthew Hakes. This policy covers the Windows standalone Free application and Flux Monitor Beta intended for distribution through Microsoft Store. Features available in your edition determine which activities below apply.
+This policy covers the Windows editions of Flux: the standalone Free edition distributed through GitHub releases and WinGet, and Flux Monitor Beta and later editions distributed through Microsoft Store. Features available in your edition and version determine which parts below apply. This revision describes the current Windows beta candidate. Earlier versions may behave as described in the policy supplied with them.
 
-This revision describes the unreleased Windows beta candidate, including Storage Explorer development. Earlier versions can retain the older storage behavior described below.
+This revision was checked against the Windows code only. It does not describe macOS-specific storage locations or behavior in detail. If you use Flux on macOS and have a question, contact us.
 
-Flux processes hardware information on your computer to display system readings. The application has no built-in advertising, usage analytics, or automatic upload of diagnostic logs to the developer. Optional remote monitoring sends readings directly to another computer; standalone update checks contact GitHub.
+## Information Flux uses on your computer
 
-## Information used on your computer
+**Hardware readings.** Flux reads CPU and GPU models, utilization, per-core usage, temperatures, clock speeds, core and thread counts, graphics memory use, available fan readings, system memory use and characteristics, drive information, and network-interface traffic counters. Drive information includes names or labels, mount paths, capacity, transfer rates, and available temperatures. Network information includes adapter names, transfer rates, and cumulative byte counters. Sensor availability varies by hardware and permissions.
 
-Flux reads CPU and GPU models, utilization, temperatures, clock speeds, core counts, graphics memory use, available fan readings, system memory use and characteristics, drive information, and network-interface traffic counters. Drive information includes names or labels, mount paths, capacity, transfer rates, and available temperatures. Network information includes adapter names, transfer rates, and cumulative byte counters. Sensor availability varies by hardware and permissions.
+**Settings.** Flux stores your preferences, custom labels, window positions, selected drives and adapters, appearance presets, storage-tool options and schedules, the time of the last update check, and remote connection settings. Remote settings include device labels, addresses, ports, and pairing credentials. Names, addresses, and paths can contain identifying information.
 
-Flux stores your preferences, custom labels, window positions, selected drives and adapters, appearance presets, and remote connection settings. Remote settings include device labels, addresses, ports, and pairing credentials. These names, addresses, and paths can contain identifying information.
+**Snap Exclusions.** To build its list, the Snap Exclusions picker asks Windows for the titles of visible windows. It lists and saves only Flux's own windows; titles of other programs are discarded and not stored. Rules you save are stored in your settings. Window titles are not included in remote sensor snapshots.
 
-The Snap Exclusions window picker reads visible window titles so you can select a snapping exclusion. Titles can include document or website names. Rules you save are stored in your settings. Window titles are not included in remote sensor snapshots.
+**Storage Explorer and storage tools.** Storage Explorer reads local folder names, file names, paths, sizes, and file-system metadata to build an in-memory usage map. It does not read file contents. Scan results are not included in remote sensor snapshots and are not uploaded by Flux. Closing the utility cancels an active scan; a completed map can remain in application memory until it is replaced or Flux closes.
 
-Storage Explorer reads local folder names, file names, paths, sizes and filesystem metadata to build an in-memory usage map. It does not read file contents. These scan results are not included in remote sensor snapshots or uploaded by Flux. Closing the utility cancels an active scan; its completed map can remain in application memory until replaced or Flux closes.
+When you choose Show in Explorer, Flux passes the selected local path to Windows Explorer so it can show that item. Flux does not send that path to remote viewers or any online service.
 
-When you choose Show in Explorer, Flux passes the selected local path to Windows Explorer so it can show that item. Flux does not send that path to its remote peers or any online service. The current beta-development build does not run scheduled storage cleanup or permanently delete items from Storage Explorer.
+In Pro, storage tools can permanently delete data when you instruct them to:
 
-Earlier builds can retain cleanup preferences, schedule timestamps, pending-operation records and results in the local configuration folder. These records can contain paths, Windows errors and operation names, but not file contents. Flux does not upload them or apply additional DPAPI encryption to them. Windows servicing tools can keep separate logs.
+- delete temporary files older than seven days from your own user temporary folder, after you review and confirm the list;
+- run that temporary-file cleanup automatically on a daily or weekly schedule that you turn on, while Flux is running, without asking again each time;
+- empty the Recycle Bin of a drive you select; and
+- run Windows component-cleanup commands, with Windows administrator approval. One of them removes the ability to go back to a previous Windows installation.
 
-Flux writes local diagnostic logs for startup, window behavior, and runtime troubleshooting. Additional diagnostics can include connection addresses, errors, and hardware details. These logs are not automatically uploaded by Flux. Review diagnostic files before sharing them with anyone.
+Deleted items are not moved to the Recycle Bin and may not be recoverable. Flux records pending cleanup operations and a history of results (time, operation name, result, and error details) in its configuration folder so it can report what happened. These records can contain paths and Windows error text, but not file contents. Flux does not upload them or apply additional encryption to them. Windows servicing tools can keep their own logs. Do not delete a cleanup record to infer that an earlier operation finished; deleting the record does not establish what happened to the files.
 
-## Optional remote monitoring
+**Diagnostic logs.** Flux writes a local diagnostic log about startup, window behavior, and runtime problems. It can include timestamps, connection addresses (including the address of a computer that pairs for remote viewing), error messages, and hardware details. Flux does not upload logs. Review diagnostic files before sharing them with anyone, including us.
 
-Broadcasting is off by default. Enabling it allows a reachable viewer with your handshake key to receive sensor snapshots over an encrypted TLS connection. The key is a credential: share it only with people and computers you trust.
+**Clipboard.** When you choose to copy a key or code, Flux places it on the Windows clipboard. Windows clipboard history or synchronization settings may keep it.
 
-A snapshot includes CPU, GPU, memory, every enumerated drive, every enumerated network interface, and a timestamp. It is not limited to visible tiles or the drive or adapter selected for display. It does not include file contents, network packet contents, or browsing history.
+## Optional remote sharing
 
-Remote monitoring is intended for a trusted local network. Flux's managed Windows firewall rules restrict access to the Private profile and local subnet, but other firewall rules, VPNs, routing, or port forwarding can change reachability. Flux does not send these snapshots through a developer-operated cloud relay.
+Remote sharing is off by default. Sharing this computer's readings is available in Free and Pro; viewing other computers requires Pro and is not included in the standalone Free edition.
 
-You can turn off broadcasting to stop current sharing. Successfully regenerating the handshake key stops existing sessions and invalidates the previous credential for future connections. Removing a saved remote device removes that connection entry; it does not revoke a key the other party already possesses. Recipients may retain information they receive.
+When you turn sharing on, Flux listens for connections on your network (port 5199 unless you change it). A viewer can connect only if you pair it with a one-time code shown on this computer, or if it has this computer's shared handshake key. A one-time code expires after five minutes, can be used once, stops working after repeated wrong attempts, and is kept only in memory. Pairing gives that viewer its own key. Connections are encrypted with TLS, and viewers check this computer's certificate.
 
-## Updates and other services
+A snapshot sent to a viewer includes CPU, GPU, memory, every enumerated drive (including its mount path and label), every enumerated network interface (including its adapter name), and a timestamp. It is not limited to visible tiles or to the drive or adapter selected for display. It does not include your computer name, Windows user name, window titles, file names, file contents, network packet contents, or browsing history.
 
-Standalone Free checks GitHub for releases and release notes by default, including in Manual mode. Auto and Manual modes check at startup and periodically while running. These HTTPS requests expose ordinary connection information, such as your IP address and the Flux-updater user agent, to GitHub and its delivery providers. They do not include sensor snapshots or pairing credentials. Setting update mode to Off disables automatic update and release-note requests; explicitly requesting an update check can still contact GitHub. Requested installer and checksum downloads also contact GitHub's delivery services.
+Remote sharing is designed for a trusted local network. Flux does not send snapshots through any server we operate. Flux does not announce itself on the network; a viewer must be given this computer's address. In the standalone edition, the installer adds a Windows Firewall rule by default (you can untick it) that allows Flux's sharing port on the Private network profile from the local subnet; it is added before sharing is turned on, but nothing listens until you turn sharing on. Turning sharing off does not remove the rule; uninstalling does. The Microsoft Store edition does not create firewall rules; Windows and your other firewall settings decide whether viewers can reach it. Other firewall rules, VPNs, routing, or port forwarding can change who can reach your computer.
 
-The Microsoft Store edition does not use the standalone GitHub updater. Microsoft handles Store distribution and updates under its own privacy practices.
+You control access:
 
-The Store edition checks app and Pro ownership through Windows APIs at startup. It repeats that check approximately once per minute when no Store operation is pending. It also refreshes ownership after license changes, checkout, and a Restore purchases request. Opening Pro requests ownership and product information, including the current formatted price. Checkout starts only after you select the purchase button.
+- Turn off sharing to stop current sharing.
+- Remove a paired viewer to end its access.
+- Turn off "Also accept the handshake key" so that only paired viewers can connect. The shared handshake key is the same for everyone who has it, so it cannot be withdrawn from one person.
+- Regenerate the key to create a new certificate and handshake key, disconnect every viewer, and remove all paired viewers.
 
-Flux reads product identifiers, purchase outcomes, license status, and expiration through Windows APIs. It keeps the resulting ownership state in process memory. Flux does not save Store account identifiers or license objects in its configuration. Flux does not request your payment-card details, Microsoft password, or a separate Flux account. Microsoft handles Store account, licensing, and payment processing under its own privacy practices. Windows Store services may make network requests or retain records independently of Flux.
+Viewers may keep information they have already received. We cannot see, reset, or recover pairing codes, keys, or viewer lists.
 
-External links opened from Flux use your browser and the destination website's privacy practices.
+## Updates, Microsoft Store and other services
 
-Windows temperature support uses a bundled third-party PawnIO installer. Windows signature verification may contact certificate services. Bundling the installer does not mean Flux downloads it during driver setup.
+**Standalone update checks (GitHub).** The standalone edition checks GitHub for new releases and release notes. Its update mode is Manual by default; Manual and Auto check at startup and about every six hours while Flux runs, and Off stops automatic checks. A check you request yourself still contacts GitHub. These HTTPS requests send a fixed user agent ("Flux-updater") and no device identifier, app version, or other information about you, but GitHub and its delivery providers receive ordinary connection information such as your IP address. Downloading an update also contacts GitHub's delivery services. GitHub's own privacy practices apply to those requests. Flux installs an update only after you choose to, and only if the download matches a checksum published with the release.
 
-## Storage and security
+**Microsoft Store.** The Store edition does not use the GitHub updater. Microsoft handles Store distribution and updates. Flux asks Windows Store services whether you own the app and Pro: at startup, about once a minute while Flux runs, after license changes, and when you open Pro, buy Pro, or choose Restore purchases. Opening Pro also requests product information, including the current price. Checkout starts only after you select the purchase button. Flux reads product identifiers, purchase outcomes, license status, and expiration through Windows, and keeps the result in memory only. It does not save Store account identifiers or license data in its configuration. Flux never asks for your payment-card details, Microsoft password, or a separate Flux account. Microsoft handles your Store account, licensing, and payments under its own privacy statement, and Windows Store services may make network requests or keep records independently of Flux.
 
-Flux stores settings, pairing information, and main diagnostic logs in your Windows user profile. In the Store beta candidate, the temperature helper sends readings through an authenticated local connection to the widget. The widget keeps those readings in memory. The helper does not transmit readings over a network. If you enable broadcasting, the widget can include these readings in the remote snapshots described above.
+**PawnIO driver.** Windows CPU temperature support is optional and uses the official PawnIO installer, which is included with Flux and run only when you choose it; Flux does not download it. Windows signature checks may contact certificate services. PawnIO is third-party software with its own terms.
 
-The standalone edition can also write a current temperature snapshot under ProgramData. Setup errors can be recorded there in a protected diagnostic file associated with your Windows account identifier. Windows packaging, profile roaming, cloud backup, or other software can affect where copies are stored.
+**Websites.** Links opened from Flux use your browser and the destination website's privacy practices.
 
-Remote traffic is encrypted in transit. Flux creates a persistent local pairing identity during normal startup even when broadcasting is off. The Windows beta candidate protects saved peer pairing keys and the local TLS identity with Windows Data Protection API (DPAPI). This protection is scoped to your Windows user. Other settings, including remote addresses and device labels, do not receive this additional encryption.
+## Where information is stored, and security
 
-DPAPI does not protect against software running as your user or an administrator. Protected files are not portable pairing exports for another Windows account.
+Flux stores settings, pairing information, storage-tool records, and the main diagnostic log in your Windows user profile (for the standalone edition, under `%APPDATA%\Flux`). Windows packaging, profile roaming, cloud backup, or other software can affect where copies are kept.
 
-Earlier versions stored pairing secrets and the TLS private key without additional application-level encryption, relying on operating-system file permissions and device security. Base64 encoding of those values is not encryption. The candidate migrates active legacy credential files, but does not erase old folders, backups, or copies made by other software. Copying a handshake key places it on the system clipboard, where Windows clipboard history or synchronization settings may retain it.
+In the standalone edition, if you choose the optional CPU temperature setup (in the installer, or later from the CPU tile), the sensor service it installs (with Windows administrator approval) writes the current CPU and drive temperature readings to `%ProgramData%\FluxSensorData`, and setup errors can be recorded in `%ProgramData%\FluxSetupDiagnostics` in a file named with your Windows account identifier. In the Store edition, a temperature helper that you approve sends readings to Flux over an authenticated local connection; it does not send readings over a network and does not save them.
 
-## Retention and your choices
+Flux creates a persistent local pairing identity at startup even when sharing is off. On Windows, Flux protects saved pairing keys, its list of paired viewers, and its TLS identity with the Windows Data Protection API (DPAPI), scoped to your Windows user. Other settings, including remote addresses and device labels you save on a viewer, are not separately encrypted. DPAPI does not protect against software running as your user or as an administrator. Protected files cannot be moved to another Windows account.
 
-Preferences and pairing information remain until you remove or replace them. Turning off broadcasting does not delete saved keys. Standalone uninstall preserves settings unless you choose the remove-settings option. Backups, migrated settings, exported files, clipboard history, and copies held by another device may remain separately.
+Earlier versions stored pairing secrets and the TLS private key without this additional encryption. Current versions migrate active credential files but do not erase old folders, backups, or copies made by other software.
 
-Flux appends diagnostic logs locally and replaces an oversized main diagnostic log at a subsequent launch. It does not apply a fixed age-based deletion period to all local files. Standalone sensor snapshot files are overwritten as readings change, but stopping Flux does not guarantee that the last file is deleted. Historical snapshots from older installations can also remain after an upgrade.
+We take reasonable steps in how Flux is built, but no software or network is completely secure, and we cannot guarantee the security of your computer, your network, or information you share with others. The pairing component uses an open-source cryptography library that is a pre-release version and has not had an independent security audit.
 
-The Store beta helper exits when its widget process ends. Flux does not persist that helper's reading cache or Store ownership state between app sessions. Setup diagnostics have separate lifetimes. The shared PawnIO driver remains installed after Flux closes.
+## Retention and deletion
 
-You can inspect or remove local configuration files while Flux is closed, turn off broadcasting, regenerate pairing credentials, remove remote entries, and disable automatic standalone update checks. Removing configuration resets preferences; remove backups and clipboard copies separately when needed.
+- Settings, pairing information, and storage-tool records remain until you remove or replace them. Turning off sharing does not delete saved keys.
+- The main diagnostic log grows over time and is replaced at a later launch once it exceeds a size limit. There is no fixed age-based deletion period for local files.
+- The standalone sensor snapshot is overwritten as readings change. Stopping or uninstalling Flux does not delete the last snapshot or setup diagnostics under ProgramData.
+- The Store edition's temperature helper exits when Flux exits and does not keep its readings. Store ownership information is not saved between sessions.
+- Uninstalling the standalone edition removes Flux's program files, shortcuts, startup entry, sensor service (when it is safe to do so), and firewall rule. It keeps your settings unless you choose the option to remove them. The shared PawnIO driver remains installed; manage it separately in Windows.
+- Backups, migrated settings, exported files, clipboard history, and copies held by viewers or other software may remain separately.
 
-Do not delete a cleanup record to infer that an earlier operation finished. Deleting the record does not establish what happened to the files.
+You can inspect or delete Flux's local files while Flux is closed, turn off sharing, remove viewers, regenerate keys, and turn off automatic update checks. Deleting the configuration resets your preferences.
 
-## Contact and changes
+## Children
+
+Flux is a general-purpose system utility. It is not directed to children under 13, and we do not knowingly collect personal information from children. Flux does not collect personal information from any user through the app.
+
+## Your rights and choices
+
+Because Flux processes your information on your own computer, you can view, change, or delete it yourself as described above. We do not receive the readings, settings, logs, or keys stored by Flux, so we cannot access, correct, export, or delete them for you.
+
+If you contact us by email, we receive your email address and whatever you send, and use it to respond to you. Depending on where you live (for example under the EU or UK GDPR or California privacy law), you may have rights to ask what personal information we hold about you, and to have it corrected or deleted. Contact us to make a request. We do not sell or share personal information for advertising. You can also complain to your local data protection authority.
+
+GitHub, Microsoft, and other services you use with Flux handle your information under their own policies. Contact them for requests about information they hold.
+
+## Changes to this policy
+
+We will update this policy when Flux's handling of information changes. The date at the top shows the latest revision. A copy is included with Windows packages as PRIVACY.txt, which describes the version it ships with.
+
+## Contact
 
 Privacy contact: [Matthew.Hakes@outlook.com](mailto:Matthew.Hakes@outlook.com).
 
-Do not post handshake keys, private logs, or other sensitive information in public GitHub issues. This policy will be updated when Flux's data handling changes; its revision date appears above.
+Do not post handshake keys, pairing codes, private logs, or other sensitive information in public GitHub issues.
