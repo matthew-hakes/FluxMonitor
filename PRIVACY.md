@@ -31,7 +31,7 @@ The current release does not offer storage cleanup. It does not delete files, em
 
 Earlier development builds offered cleanup tools. If you used one, its cleanup preferences, schedule times, pending-operation records and result history (time, operation name, result, and error details) can remain in Flux's configuration folder. These records can contain paths and Windows error text, but not file contents. Flux does not upload them or apply additional encryption to them. Windows servicing tools can keep their own logs.
 
-**Diagnostic logs.** Flux writes a local diagnostic log about startup, window behavior, and runtime problems. It can include timestamps, connection addresses (including the address of a computer that pairs for remote viewing), error messages, and hardware details. Flux does not upload logs. Review diagnostic files before sharing them with anyone, including us.
+**Diagnostic logs.** Flux writes a local diagnostic log about startup, window behavior, and runtime problems. It can include timestamps, connection addresses (including the address of a computer that pairs for remote viewing), error messages, and hardware details. The standalone installer also keeps a setup log at `%LOCALAPPDATA%\FluxSetup\setup.log` recording when setup ran, its options (which can include your Windows account identifier), each step, and any error; it stays after uninstall and is replaced once it exceeds a size limit. Flux does not upload logs. Review diagnostic files before sharing them with anyone, including us.
 
 **Clipboard.** When you choose to copy a key or code, Flux places it on the Windows clipboard. Windows clipboard history or synchronization settings may keep it.
 
@@ -80,7 +80,7 @@ We take reasonable steps in how Flux is built, but no software or network is com
 
 - Settings, pairing information, and storage-tool records remain until you remove or replace them. Turning off sharing does not delete saved keys.
 - The main diagnostic log grows over time and is replaced at a later launch once it exceeds a size limit. There is no fixed age-based deletion period for local files.
-- The standalone sensor snapshot is overwritten as readings change. Stopping or uninstalling Flux does not delete the last snapshot or setup diagnostics under ProgramData.
+- The standalone sensor snapshot is overwritten as readings change. Stopping or uninstalling Flux does not delete the last snapshot, setup diagnostics under ProgramData, or the setup log under `%LOCALAPPDATA%\FluxSetup`.
 - The Store edition's temperature helper exits when Flux exits and does not keep its readings. Store ownership information is not saved between sessions.
 - Uninstalling the standalone edition removes Flux's program files, shortcuts, startup entry, sensor service (when it is safe to do so), and firewall rule. It keeps your settings unless you choose the option to remove them. The shared PawnIO driver remains installed; manage it separately in Windows.
 - Backups, migrated settings, exported files, clipboard history, and copies held by viewers or other software may remain separately.
