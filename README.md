@@ -4,8 +4,8 @@
 Flux Monitor keeps live CPU, GPU, memory, network and disk readings in a compact
 desktop widget, and Storage Explorer shows which folders fill your drives.
 
-[![Release](https://img.shields.io/badge/release-v1.3.6-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.6)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/0c49acfd737cadf40b187c28a5fb5ef18951749cd4bbf788fca1c97914fa2bff)
+[![Release](https://img.shields.io/badge/release-v1.3.7-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.7)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/d913d2b5efbff2e5b37a8f1603539ffa7f8450b03008170958b306009b879fd6)
 ![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 
 This repository provides downloads and documentation. The application source is private.
@@ -29,7 +29,7 @@ This repository provides downloads and documentation. The application source is 
 
 <table>
   <tr>
-    <td width="50%" valign="top"><a href="docs/images/pro-skins.png"><img src="docs/images/pro-skins.png" alt="A row of hand-crafted material skins"></a><br><b>Hand-crafted skins.</b> Stained glass, porcelain, opal, bioluminescence and more.</td>
+    <td width="50%" valign="top"><a href="docs/images/pro-skins.png"><img src="docs/images/pro-skins.png" alt="A row of hand-crafted material skins"></a><br><b>Hand-crafted skins.</b> Stained glass, porcelain, opal, a circuit board, brass instruments and more.</td>
     <td width="50%" valign="top"><a href="docs/images/pro-skin-detail.png"><img src="docs/images/pro-skin-detail.png" alt="Three material skins showing live readings"></a><br><b>Every material, live.</b> Each skin redraws the same readings in its own style.</td>
   </tr>
   <tr>
@@ -44,8 +44,8 @@ This repository provides downloads and documentation. The application source is 
 
 ## Release status
 
-The latest Windows download is the standalone Free **v1.3.6**. See its
-[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.6)
+The latest Windows download is the standalone Free **v1.3.7**. See its
+[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.7)
 for what changed. The Microsoft Store edition and its Pro upgrade are in private
 beta and are not publicly available yet.
 
@@ -96,16 +96,16 @@ authorized to monitor.
 
 ### Windows
 
-1. Download `flux-setup-free-v1.3.6.exe` and its `.sha256` file from the
-   [v1.3.6 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.6).
+1. Download `flux-setup-free-v1.3.7.exe` and its `.sha256` file from the
+   [v1.3.7 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.7).
 2. Check that the file matches the published checksum:
 
    ```powershell
-   Get-FileHash .\flux-setup-free-v1.3.6.exe -Algorithm SHA256
+   Get-FileHash .\flux-setup-free-v1.3.7.exe -Algorithm SHA256
    ```
 
-   - SHA-256: `0C49ACFD737CADF40B187C28A5FB5EF18951749CD4BBF788FCA1C97914FA2BFF`
-   - VirusTotal: **0 / 71**, [view the scan](https://www.virustotal.com/gui/file/0c49acfd737cadf40b187c28a5fb5ef18951749cd4bbf788fca1c97914fa2bff)
+   - SHA-256: `D913D2B5EFBFF2E5B37A8F1603539FFA7F8450B03008170958B306009B879FD6`
+   - VirusTotal: **0 / 71**, [view the scan](https://www.virustotal.com/gui/file/d913d2b5efbff2e5b37a8f1603539ffa7f8450b03008170958b306009b879fd6)
 
 3. Run the installer.
 
