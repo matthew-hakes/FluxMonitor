@@ -1,16 +1,53 @@
 # Flux Monitor
 
-Desktop system-monitor widgets for CPU, GPU, RAM, network, disk, and clock information.
-This repository provides downloads and documentation. Application source is private.
+**See how your PC is running without leaving what you're doing.**
+Flux Monitor keeps live CPU, GPU, memory, network and disk readings in a compact
+desktop widget, and Storage Explorer shows which folders fill your drives.
 
-[![Release](https://img.shields.io/badge/release-v1.3.5-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases)
+[![Release](https://img.shields.io/badge/release-v1.3.5-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.5)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/bd306bf12cb5b39ec69b562e98c5e3374fe96f27af70a8cf7b1dd66ef1314515)
+![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
+
+This repository provides downloads and documentation. The application source is private.
+
+## Screenshots
+
+### Free
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="docs/images/at-a-glance.png"><img src="docs/images/at-a-glance.png" alt="Flux widgets showing live CPU, GPU, memory, network and disk readings"></a><br><b>Your PC at a glance.</b> Live CPU, GPU, memory, network and disk, in Light or Dark.</td>
+    <td width="50%" valign="top"><a href="docs/images/storage-explorer.png"><img src="docs/images/storage-explorer.png" alt="Storage Explorer"></a><br><b>Storage Explorer.</b> See which folders fill a drive. Flux never moves or deletes your files.</td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><a href="docs/images/horizontal.png"><img src="docs/images/horizontal.png" alt="Flux docked horizontally with a clock tile"></a><br><b>Vertical or horizontal.</b> Add a clock, reorder tiles and dock Flux along any screen edge.</td>
+    <td width="50%" valign="top"><a href="docs/images/light-dark.png"><img src="docs/images/light-dark.png" alt="Flux in Light and Dark"></a><br><b>Light and Dark.</b> Switch with one click. Sizes, fonts and tiles stay as you set them.</td>
+  </tr>
+</table>
+
+### Pro (Microsoft Store)
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="docs/images/pro-skins.png"><img src="docs/images/pro-skins.png" alt="A row of hand-crafted material skins"></a><br><b>Hand-crafted skins.</b> Stained glass, porcelain, opal, bioluminescence and more.</td>
+    <td width="50%" valign="top"><a href="docs/images/pro-skin-detail.png"><img src="docs/images/pro-skin-detail.png" alt="Three material skins showing live readings"></a><br><b>Every material, live.</b> Each skin redraws the same readings in its own style.</td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><a href="docs/images/pro-colors.png"><img src="docs/images/pro-colors.png" alt="Flux in several custom color schemes"></a><br><b>Your colors.</b> Pick any accent and tile color, then save the look as a preset.</td>
+    <td width="50%" valign="top"><a href="docs/images/pro-alerts.png"><img src="docs/images/pro-alerts.png" alt="A tile warming and then flashing red past its limit"></a><br><b>Tile Alerts.</b> Readings warm as they climb, and the tile flashes past your limit.</td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><a href="docs/images/pro-game-mode.png"><img src="docs/images/pro-game-mode.png" alt="Game Mode overlay over three games in different screen positions"></a><br><b>Game Mode.</b> One hotkey adds a slim, see-through overlay on any screen edge.</td>
+    <td width="50%" valign="top"><a href="docs/images/pro-remote.png"><img src="docs/images/pro-remote.png" alt="Remote monitoring with device tabs and a pop-out window"></a><br><b>Remote monitoring.</b> Watch up to four other PCs on your network, in tabs or their own windows.</td>
+  </tr>
+</table>
 
 ## Release status
 
-The latest Windows download is the standalone Free **v1.3.5**. Refer to its
+The latest Windows download is the standalone Free **v1.3.5**. See its
 [release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.5)
-for what changed. The Microsoft Store beta is in private testing; it and its Pro
-upgrade are not publicly available yet.
+for what changed. The Microsoft Store edition and its Pro upgrade are in private
+beta and are not publicly available yet.
 
 The macOS release stays on
 [v1.3.0](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.0).
@@ -19,84 +56,70 @@ The macOS release stays on
 
 ## Editions
 
-### Windows editions
-
-Windows has two feature tiers: Free and Pro. Standalone Free
-and Store Free share the same Free monitoring features. Installation, update
-delivery, and Store purchase options differ.
+Windows has two feature tiers, Free and Pro. Standalone Free and Store Free share
+the same features; they differ only in how they are installed and updated.
 
 | Feature | Standalone Free | Store Free | Store Pro |
-| --- | --- | --- | --- |
-| Local CPU, GPU, RAM, Network, Disk, and Clock tiles | Included | Included | Included |
-| Light and Dark colors | Included | Included | Included |
-| Fonts, skins, layout, and opacity controls | Included | Included | Included |
-| Utilities, Help, and optional LAN broadcasting | Included | Included | Included |
-| Custom colors and bundled theme palettes | — | — | Included |
-| Saved appearances and appearance import/export | — | — | Included |
-| Remote viewing and remote pop-out windows | — | — | Included |
-| Alerts and Game Mode | — | — | Included |
+| --- | :---: | :---: | :---: |
+| Live CPU, GPU, RAM, Network, Disk and Clock tiles | ✓ | ✓ | ✓ |
+| Storage Explorer | ✓ | ✓ | ✓ |
+| Light and Dark, built-in skins, fonts, layout and opacity | ✓ | ✓ | ✓ |
+| Optional sharing of this PC's readings on your local network | ✓ | ✓ | ✓ |
+| Hand-crafted material skins | — | — | ✓ |
+| Custom colors, theme palettes and saved appearances | — | — | ✓ |
+| Tile Alerts | — | — | ✓ |
+| Game Mode overlay | — | — | ✓ |
+| Remote viewing of up to four other PCs, with pop-out windows | — | — | ✓ |
 
-Pro supports this PC plus up to four remote devices: **five devices total**.
-Each remote device can use its own pop-out window.
-
-The planned Pro upgrade is a one-time, non-expiring Microsoft Store add-on inside
-the Store app. It is not a subscription or a separate Pro installer. Purchase
-and restore use the Microsoft Store account that owns the app. Standalone Free
-does not accept Store licenses or activation codes.
+Pro is a one-time, non-expiring add-on purchased inside the Microsoft Store app.
+It is not a subscription or a separate installer. Purchase and restore use the
+Microsoft account that owns the app. Standalone Free does not accept Store
+licenses or activation codes.
 
 Beta licenses apply to the beta product; do not assume they transfer to a future
-production app. Pricing and availability will accompany the approved release.
+production app. Pricing and availability will be announced with the public release.
 
-Pro theme palettes are bundled for offline use. Dark and Light are always
-available. Other palettes stay hidden from the theme picker until enabled.
-Hover over Preview to try a palette. Move away to restore the current colors.
-Color controls preserve the selected skin and fonts.
+Standalone updates use this GitHub release channel. Store installations update
+through the Microsoft Store and show a changelog in Settings instead.
 
-Standalone updates use this GitHub release channel. Store installations
-receive updates through Microsoft Store; their settings show a changelog
-instead of a separate updater.
+### Remote monitoring
 
-### Windows remote monitoring
-
-LAN broadcasting is optional and available in Free. Remote viewing requires Pro.
-A viewer is added by its device address and paired with a one-time code shown on
-the shared computer (or the older shared handshake key, which can be switched
+Sharing this PC's readings is optional, off by default and available in Free.
+Viewing other PCs requires Pro. Add a PC by its address and pair it with a
+one-time code shown on that PC (or with its handshake key, which can be switched
 off). There is no automatic discovery. Connections use TLS with certificate
 pinning, and each paired viewer has its own key that can be removed at any time.
-Enable sharing only on a trusted local network, and only for computers you are
+Turn on sharing only on a trusted local network, and only for computers you are
 authorized to monitor.
 
-## Install the published release
+## Install
 
 ### Windows
 
-Download `flux-setup-free-v1.3.5.exe` and its matching `.sha256` from
-[Releases](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.5).
-Compare the downloaded file's SHA-256 value with the published checksum:
+1. Download `flux-setup-free-v1.3.5.exe` and its `.sha256` file from the
+   [v1.3.5 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.5).
+2. Check that the file matches the published checksum:
 
-```powershell
-Get-FileHash .\flux-setup-free-v1.3.5.exe -Algorithm SHA256
-```
+   ```powershell
+   Get-FileHash .\flux-setup-free-v1.3.5.exe -Algorithm SHA256
+   ```
 
-- SHA-256: `BD306BF12CB5B39EC69B562E98C5E3374FE96F27AF70A8CF7B1DD66EF1314515`
-- VirusTotal: **0 / 71** — [view the scan](https://www.virustotal.com/gui/file/bd306bf12cb5b39ec69b562e98c5e3374fe96f27af70a8cf7b1dd66ef1314515)
+   - SHA-256: `BD306BF12CB5B39EC69B562E98C5E3374FE96F27AF70A8CF7B1DD66EF1314515`
+   - VirusTotal: **0 / 71**, [view the scan](https://www.virustotal.com/gui/file/bd306bf12cb5b39ec69b562e98c5e3374fe96f27af70a8cf7b1dd66ef1314515)
 
-CPU temperature needs the optional third-party PawnIO driver. Tick it in setup,
-use **Temp: set up** on the CPU tile later, or add `--with-cpu-temp` to a silent
-install.
+3. Run the installer.
 
-The standalone installer is unsigned. A matching checksum checks file integrity;
-it does not identify a trusted Windows publisher or guarantee safety. Download
-only from this repository's release page. Do not install a certificate to trust
-a Flux development build.
+The standalone installer is not code-signed, so SmartScreen may warn about it
+(choose **More info**, then **Run anyway**). A matching checksum confirms the file
+was not changed; it does not identify a trusted publisher or guarantee safety.
+Download only from this repository's release page, and never install a
+certificate to trust a Flux build.
 
-WinGet distribution is planned, but catalog availability is not confirmed.
-Use the published GitHub download for now. Command-line installation instructions
-will follow catalog verification and installation testing.
+WinGet distribution is planned but not yet confirmed. Use the GitHub download for now.
 
 ### macOS v1.3.0
 
-1. Download `Flux-Monitor-Free-v1.3.0-macOS-arm64.dmg` and its `.sha256` from the
+1. Download `Flux-Monitor-Free-v1.3.0-macOS-arm64.dmg` and its `.sha256` file from the
    [v1.3.0 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.0).
 2. Verify the disk image:
 
@@ -106,58 +129,71 @@ will follow catalog verification and installation testing.
 
 3. Open the disk image and drag **Flux** to **Applications**.
 
-The published Mac app is ad-hoc signed, not Apple-notarized. Refer to the release
-notes for platform-specific installation and sensor information.
+The Mac app is ad-hoc signed, not Apple-notarized. See the release notes for
+installation and sensor details.
 
 ### Requirements
 
 - Windows 10 or 11, x64, with a compatible graphics driver.
-- macOS 12 or later, Apple Silicon (arm64), for the published Mac release.
+- macOS 12 or later on Apple Silicon (arm64) for the Mac release.
 
-Hardware readings depend on the device, firmware, drivers, and permissions.
-Windows Server compatibility must be checked for the specific release and system.
+Readings depend on the device, firmware, drivers and permissions. Check Windows
+Server compatibility for your specific release and system.
 
-## Windows temperature support
+## CPU temperature on Windows
 
-For the published v1.3.0 download, refer to that release's setup information.
+CPU temperature uses the optional third-party
+[PawnIO](https://pawnio.eu/) driver. Usage and clock readings work without it.
 
-The pending Windows candidate bundles the official, unmodified PawnIO installer
-for optional CPU-temperature setup. The candidate verifies the installer before
-it runs. Setup requires your consent and Windows administrator approval. CPU
-usage and available clock readings remain usable without temperature setup.
+- **Standalone:** tick the PawnIO option in setup, use **Temp: set up** on the CPU
+  tile later, or add `--with-cpu-temp` to a silent install. Flux runs the official,
+  unmodified PawnIO installer it ships with, after checking it, and Windows asks
+  for administrator approval.
+- **Microsoft Store:** the widget, local network features and purchases run with
+  normal user rights. Temperature setup asks for administrator approval when you
+  use it. The Store edition adds no permanent sensor task or service.
 
-The Store candidate keeps the widget, LAN monitoring, and purchases at normal
-user privileges. A separate temperature helper requires administrator consent
-for the session. Flux does not add a persistent sensor task or service in this
-Store design. PawnIO installs its own driver. Removing Flux does not automatically
-remove that shared driver.
-
-Bundling, third-party notices, and Store delivery still require final review and
-qualification. No Microsoft approval or universal sensor support is claimed.
+PawnIO installs its own shared driver, and uninstalling Flux does not remove it.
+Not every processor or motherboard reports temperatures.
 
 ## Privacy and support
 
-Refer to the [privacy policy](PRIVACY.md) for data handling and contact information.
+See the [privacy policy](PRIVACY.md) for how data is handled and how to get in touch.
 Report problems through [Issues](https://github.com/matthew-hakes/FluxMonitor/issues).
-Do not post handshake keys, credentials, or other private information in a report.
+Never post handshake keys, pairing codes, credentials or other private information
+in a report.
 
 ## Uninstall
 
 ### Windows
 
-Open **Settings → Apps → Flux → Uninstall**. Review the options shown by your
-installed version before removing settings or optional components.
+Open Windows **Settings**, go to **Apps**, find **Flux** and choose **Uninstall**.
+Review the options your installed version shows before removing settings or
+optional components.
 
 ### macOS v1.3.0
 
 Quit Flux from the Flux Drop, then move `Flux.app` from Applications to the Trash.
-To remove preferences too, delete `~/Library/Application Support/com.Flux.Flux`;
-remove `~/Library/LaunchAgents/com.matthewhakes.flux.plist` if startup was enabled.
+To remove preferences too, delete `~/Library/Application Support/com.Flux.Flux`,
+and remove `~/Library/LaunchAgents/com.matthewhakes.flux.plist` if startup was enabled.
 
 ## License
 
-© 2026 Matthew Hakes. Flux Monitor is proprietary software, licensed, not sold, under the End User License Agreement in [`LICENSE`](LICENSE) (v2.3, November 17, 2026). Free permits personal and internal business use, including monitoring servers (for example Windows Server) you own or are authorized to manage; on Windows, payment unlocks Pro features through the Microsoft Store only. Organizations may deploy the unmodified standalone Free installer internally; public redistribution or mirroring requires prior written permission. The license does not promise compatibility with any particular system.
+© 2026 Matthew Hakes. Flux Monitor is proprietary software, licensed, not sold,
+under the End User License Agreement in [`LICENSE`](LICENSE) (v2.3, November 17, 2026).
+Free permits personal and internal business use, including monitoring servers
+(for example Windows Server) you own or are authorized to manage. On Windows, Pro
+features are unlocked only through the Microsoft Store. Organizations may deploy
+the unmodified standalone Free installer internally; public redistribution or
+mirroring requires prior written permission. The license does not promise
+compatibility with any particular system.
 
-The standalone installer is not code-signed, so SmartScreen or antivirus software may warn about it. Flux is provided as is, to the extent the law allows. Hardware readings can be wrong and must not be relied on for safety. The terms are governed by Tennessee law, subject to the mandatory consumer law where you live. Third-party components keep their own licenses. Each release states the license and privacy terms that apply to it.
+Flux is provided as is, to the extent the law allows. Hardware readings can be
+wrong and must not be relied on for safety. The terms are governed by Tennessee
+law, subject to the mandatory consumer law where you live. Third-party components
+keep their own licenses. Each release states the license and privacy terms that
+apply to it.
 
-The Microsoft Store edition is licensed under Microsoft's standard application license terms instead; the `LICENSE` file here governs the standalone downloads (GitHub and winget).
+The Microsoft Store edition is licensed under Microsoft's standard application
+license terms instead; the `LICENSE` file here governs the standalone downloads
+(GitHub and WinGet).
