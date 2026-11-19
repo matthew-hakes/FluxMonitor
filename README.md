@@ -4,7 +4,7 @@
 Flux Monitor keeps live CPU, GPU, memory, network and disk readings in a compact
 desktop widget, and Storage Explorer shows which folders fill your drives.
 
-[![Release](https://img.shields.io/badge/release-v1.3.7-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.7)
+[![Release](https://img.shields.io/badge/release-v1.3.8-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.8)
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/d913d2b5efbff2e5b37a8f1603539ffa7f8450b03008170958b306009b879fd6)
 ![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 
@@ -44,8 +44,8 @@ This repository provides downloads and documentation. The application source is 
 
 ## Release status
 
-The latest Windows download is the standalone Free **v1.3.7**. See its
-[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.7)
+The latest Windows download is the standalone Free **v1.3.8**. See its
+[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.8)
 for what changed. The Microsoft Store edition and its Pro upgrade are in private
 beta and are not publicly available yet.
 
@@ -96,12 +96,12 @@ authorized to monitor.
 
 ### Windows
 
-1. Download `flux-setup-free-v1.3.7.exe` and its `.sha256` file from the
-   [v1.3.7 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.7).
+1. Download `flux-setup-free-v1.3.8.exe` and its `.sha256` file from the
+   [v1.3.8 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.8).
 2. Check that the file matches the published checksum:
 
    ```powershell
-   Get-FileHash .\flux-setup-free-v1.3.7.exe -Algorithm SHA256
+   Get-FileHash .\flux-setup-free-v1.3.8.exe -Algorithm SHA256
    ```
 
    - SHA-256: `D913D2B5EFBFF2E5B37A8F1603539FFA7F8450B03008170958B306009B879FD6`
