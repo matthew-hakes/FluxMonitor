@@ -4,8 +4,8 @@
 Flux Monitor keeps live CPU, GPU, memory, network and disk readings in a compact
 desktop widget, and Storage Explorer shows which folders fill your drives.
 
-[![Release](https://img.shields.io/badge/release-v1.3.16-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.16)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/e385091de098d9981f898ae8ccb8979ef850166bfccb6fda6c02efc42372ad0b)
+[![Release](https://img.shields.io/badge/release-v1.0.2-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.17)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/0bda8fa3919471d982bc8d09ab4a756fba118b9d0f019489ef6d1cd058e21164)
 ![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 
 This repository provides downloads and documentation. The application source is private.
@@ -37,16 +37,16 @@ This repository provides downloads and documentation. The application source is 
     <td width="50%" valign="top"><a href="docs/images/pro-alerts.png"><img src="docs/images/pro-alerts.png" alt="A tile warming and then flashing red past its limit"></a><br><b>Tile Alerts.</b> Readings warm as they climb, and the tile flashes past your limit.</td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><a href="docs/images/pro-game-mode.png"><img src="docs/images/pro-game-mode.png" alt="Game Mode overlay over three games in different screen positions"></a><br><b>Game Mode.</b> One hotkey adds a slim, see-through overlay on any screen edge.</td>
+    <td width="50%" valign="top"><a href="docs/images/pro-game-mode.png"><img src="docs/images/pro-game-mode.png" alt="Game Mode glass bar over three games in different screen positions"></a><br><b>Game Mode.</b> One hotkey adds a slim glass bar of readings on any screen edge.</td>
     <td width="50%" valign="top"><a href="docs/images/pro-remote.png"><img src="docs/images/pro-remote.png" alt="Remote monitoring with device tabs and a pop-out window"></a><br><b>Remote monitoring.</b> Watch up to four other PCs on your network, in tabs or their own windows.</td>
   </tr>
 </table>
 
 ## Release status
 
-The latest Windows download is **Flux Lite v1.3.16**, the free standalone edition
+The latest Windows download is **Flux Lite v1.0.2**, the free standalone edition
 (called "Flux Free" up to v1.3.14). See its
-[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.16)
+[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.17)
 for what changed. The Microsoft Store edition and its Pro upgrade are in private
 beta and are not publicly available yet.
 
@@ -98,16 +98,16 @@ authorized to monitor.
 
 ### Windows
 
-1. Download `flux-lite-setup-v1.3.16.exe` and its `.sha256` file from the
-   [v1.3.16 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.16).
+1. Download `flux-lite-setup-v1.0.2.exe` and its `.sha256` file from the
+   [v1.0.2 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.17).
 2. Check that the file matches the published checksum:
 
    ```powershell
-   Get-FileHash .\flux-lite-setup-v1.3.16.exe -Algorithm SHA256
+   Get-FileHash .\flux-lite-setup-v1.0.2.exe -Algorithm SHA256
    ```
 
-   - SHA-256: `E385091DE098D9981F898AE8CCB8979EF850166BFCCB6FDA6C02EFC42372AD0B`
-   - VirusTotal: **0 / 71**, [view the scan](https://www.virustotal.com/gui/file/e385091de098d9981f898ae8ccb8979ef850166bfccb6fda6c02efc42372ad0b)
+   - SHA-256: `0BDA8FA3919471D982BC8D09AB4A756FBA118B9D0F019489EF6D1CD058E21164`
+   - VirusTotal: **0 / 71**, [view the scan](https://www.virustotal.com/gui/file/0bda8fa3919471d982bc8d09ab4a756fba118b9d0f019489ef6d1cd058e21164)
 
 3. Run the installer.
 
