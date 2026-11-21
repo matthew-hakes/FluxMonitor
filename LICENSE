@@ -1,6 +1,6 @@
 Flux Monitor End User License Agreement
 
-Version 2.3 - November 17, 2026
+Version 2.4 - November 20, 2026
 Copyright (c) 2026 Matthew Hakes. All rights reserved.
 
 ## 1. Parties and acceptance
@@ -17,15 +17,15 @@ The publisher grants you a nonexclusive, nontransferable license to install and 
 
 You may download Flux from the publisher's official distribution channels: the Microsoft Store listing, the official FluxMonitor GitHub releases, and WinGet manifests that retrieve the official installer. This permits those download references, not unauthorized public mirrors.
 
-You may make reasonable backup copies. You may deploy the standalone Free edition internally within your organization, with its notices and license intact. This permission does not authorize public hosting, resale, or supply as part of a third-party product or managed service.
+You may make reasonable backup copies. You may deploy Flux Lite (the free standalone edition) internally within your organization, with its notices and license intact. This permission does not authorize public hosting, resale, or supply as part of a third-party product or managed service.
 
 For Microsoft Store copies, installation and account use also follow the applicable Microsoft Store usage rules and the entitlement acquired. These terms do not grant additional Store accounts, device entitlements, or transferable Pro licenses.
 
-## 3. Free and Pro editions
+## 3. Lite and Pro editions
 
-The Windows standalone Free edition and the Microsoft Store Free edition provide the features identified as Free in the supplied version. Both Free editions permit personal and internal business use without purchasing Pro. Payment unlocks Pro features; business use alone does not require Pro.
+Flux Lite is the free edition of Flux: the Windows standalone download, and the Microsoft Store edition used without the Pro add-on. Earlier versions call it "Free"; these terms apply to it under either name. Both forms of Flux Lite provide the features identified as Lite (or Free) in the supplied version, and both permit personal and internal business use without purchasing Pro. Payment unlocks Pro features; business use alone does not require Pro.
 
-The Microsoft Store Pro add-on unlocks the Pro features identified in its offer. Microsoft Store manages its acquisition and ownership. Pro access requires a valid entitlement for the corresponding Store product. The Windows standalone Free edition does not accept Store Pro activation codes or import that entitlement. On Windows, the publisher does not currently offer Pro through any channel other than the Microsoft Store.
+The Microsoft Store Pro add-on unlocks the Pro features identified in its offer. Microsoft Store manages its acquisition and ownership. Pro access requires a valid entitlement for the corresponding Store product. The standalone Flux Lite download does not accept Store Pro activation codes or import that entitlement. On Windows, the publisher does not currently offer Pro through any channel other than the Microsoft Store.
 
 Flux Monitor Beta and a later production Store product can have different identities. A Beta entitlement does not promise a production entitlement unless the publisher expressly includes that right in the offer. No future price or paid upgrade follows from these terms alone.
 

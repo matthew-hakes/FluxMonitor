@@ -4,20 +4,20 @@
 Flux Monitor keeps live CPU, GPU, memory, network and disk readings in a compact
 desktop widget, and Storage Explorer shows which folders fill your drives.
 
-[![Release](https://img.shields.io/badge/release-v1.3.14-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.14)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/02a36886487f399d5925261de6bb9bd7824069d3d4bc8cc07366e28631a24a02)
+[![Release](https://img.shields.io/badge/release-v1.3.16-5898a0)](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.16)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-0%2F71-2ea44f)](https://www.virustotal.com/gui/file/e385091de098d9981f898ae8ccb8979ef850166bfccb6fda6c02efc42372ad0b)
 ![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 
 This repository provides downloads and documentation. The application source is private.
 
 ## Screenshots
 
-### Free
+### Flux Lite
 
 <table>
   <tr>
     <td width="50%" valign="top"><a href="docs/images/at-a-glance.png"><img src="docs/images/at-a-glance.png" alt="Flux widgets showing live CPU, GPU, memory, network and disk readings"></a><br><b>Your PC at a glance.</b> Live CPU, GPU, memory, network and disk, in Light or Dark.</td>
-    <td width="50%" valign="top"><a href="docs/images/storage-explorer.png"><img src="docs/images/storage-explorer.png" alt="Storage Explorer"></a><br><b>Storage Explorer.</b> See which folders fill a drive. Flux never moves or deletes your files.</td>
+    <td width="50%" valign="top"><a href="docs/images/storage-explorer.png"><img src="docs/images/storage-explorer.png" alt="Storage Explorer"></a><br><b>Storage Explorer.</b> Scans a whole drive in seconds and shows which folders and files fill it. Flux never moves or deletes your files.</td>
   </tr>
   <tr>
     <td width="50%" valign="top"><a href="docs/images/horizontal.png"><img src="docs/images/horizontal.png" alt="Flux docked horizontally with a clock tile"></a><br><b>Vertical or horizontal.</b> Add a clock, reorder tiles and dock Flux along any screen edge.</td>
@@ -44,8 +44,9 @@ This repository provides downloads and documentation. The application source is 
 
 ## Release status
 
-The latest Windows download is the standalone Free **v1.3.14**. See its
-[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.14)
+The latest Windows download is **Flux Lite v1.3.16**, the free standalone edition
+(called "Flux Free" up to v1.3.14). See its
+[release notes](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.16)
 for what changed. The Microsoft Store edition and its Pro upgrade are in private
 beta and are not publicly available yet.
 
@@ -56,10 +57,11 @@ The macOS release stays on
 
 ## Editions
 
-Windows has two feature tiers, Free and Pro. Standalone Free and Store Free share
-the same features; they differ only in how they are installed and updated.
+Windows has two feature tiers, Flux Lite and Flux Pro. Flux Lite is free. The
+standalone download and the Store edition without the Pro add-on share the same
+features; they differ only in how they are installed and updated.
 
-| Feature | Standalone Free | Store Free | Store Pro |
+| Feature | Flux Lite (standalone) | Flux Lite (Store) | Flux Pro (Store) |
 | --- | :---: | :---: | :---: |
 | Live CPU, GPU, RAM, Network, Disk and Clock tiles | ✓ | ✓ | ✓ |
 | Storage Explorer | ✓ | ✓ | ✓ |
@@ -73,8 +75,8 @@ the same features; they differ only in how they are installed and updated.
 
 Pro is a one-time, non-expiring add-on purchased inside the Microsoft Store app.
 It is not a subscription or a separate installer. Purchase and restore use the
-Microsoft account that owns the app. Standalone Free does not accept Store
-licenses or activation codes.
+Microsoft account that owns the app. The standalone Flux Lite download does not
+accept Store licenses or activation codes.
 
 Beta licenses apply to the beta product; do not assume they transfer to a future
 production app. Pricing and availability will be announced with the public release.
@@ -84,7 +86,7 @@ through the Microsoft Store and show a changelog in Settings instead.
 
 ### Remote monitoring
 
-Sharing this PC's readings is optional, off by default and available in Free.
+Sharing this PC's readings is optional, off by default and available in Flux Lite.
 Viewing other PCs requires Pro. Add a PC by its address and pair it with a
 one-time code shown on that PC (or with its handshake key, which can be switched
 off). There is no automatic discovery. Connections use TLS with certificate
@@ -96,16 +98,16 @@ authorized to monitor.
 
 ### Windows
 
-1. Download `flux-setup-free-v1.3.14.exe` and its `.sha256` file from the
-   [v1.3.14 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.14).
+1. Download `flux-lite-setup-v1.3.16.exe` and its `.sha256` file from the
+   [v1.3.16 release](https://github.com/matthew-hakes/FluxMonitor/releases/tag/v1.3.16).
 2. Check that the file matches the published checksum:
 
    ```powershell
-   Get-FileHash .\flux-setup-free-v1.3.14.exe -Algorithm SHA256
+   Get-FileHash .\flux-lite-setup-v1.3.16.exe -Algorithm SHA256
    ```
 
-   - SHA-256: `02A36886487F399D5925261DE6BB9BD7824069D3D4BC8CC07366E28631A24A02`
-   - VirusTotal: **0 / 71**, [view the scan](https://www.virustotal.com/gui/file/02a36886487f399d5925261de6bb9bd7824069d3d4bc8cc07366e28631a24a02)
+   - SHA-256: `E385091DE098D9981F898AE8CCB8979EF850166BFCCB6FDA6C02EFC42372AD0B`
+   - VirusTotal: **0 / 71**, [view the scan](https://www.virustotal.com/gui/file/e385091de098d9981f898ae8ccb8979ef850166bfccb6fda6c02efc42372ad0b)
 
 3. Run the installer.
 
@@ -180,11 +182,11 @@ and remove `~/Library/LaunchAgents/com.matthewhakes.flux.plist` if startup was e
 ## License
 
 © 2026 Matthew Hakes. Flux Monitor is proprietary software, licensed, not sold,
-under the End User License Agreement in [`LICENSE`](LICENSE) (v2.3, November 17, 2026).
-Free permits personal and internal business use, including monitoring servers
+under the End User License Agreement in [`LICENSE`](LICENSE) (v2.4, November 20, 2026).
+Flux Lite permits personal and internal business use, including monitoring servers
 (for example Windows Server) you own or are authorized to manage. On Windows, Pro
 features are unlocked only through the Microsoft Store. Organizations may deploy
-the unmodified standalone Free installer internally; public redistribution or
+the unmodified standalone Flux Lite installer internally; public redistribution or
 mirroring requires prior written permission. The license does not promise
 compatibility with any particular system.
 

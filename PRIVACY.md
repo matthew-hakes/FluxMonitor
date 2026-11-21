@@ -1,6 +1,6 @@
 # Flux Monitor Privacy Policy
 
-Last updated: November 17, 2026.
+Last updated: November 20, 2026.
 
 ## Summary
 
@@ -11,7 +11,7 @@ Last updated: November 17, 2026.
 
 ## Scope
 
-This policy covers the Windows editions of Flux: the standalone Free edition distributed through GitHub releases and WinGet, and Flux Monitor Beta and later editions distributed through Microsoft Store. Features available in your edition and version determine which parts below apply. This revision describes the current Windows beta candidate. Earlier versions may behave as described in the policy supplied with them.
+This policy covers the Windows editions of Flux: Flux Lite, the free standalone edition distributed through GitHub releases and WinGet (earlier versions call it "Free"), and Flux Monitor Beta and later editions distributed through Microsoft Store. Features available in your edition and version determine which parts below apply. This revision describes the current Windows beta candidate. Earlier versions may behave as described in the policy supplied with them.
 
 This revision was checked against the Windows code only. It does not describe macOS-specific storage locations or behavior in detail. If you use Flux on macOS and have a question, contact us.
 
@@ -37,7 +37,7 @@ Earlier development builds offered cleanup tools. If you used one, its cleanup p
 
 ## Optional remote sharing
 
-Remote sharing is off by default. Sharing this computer's readings is available in Free and Pro; viewing other computers requires Pro and is not included in the standalone Free edition.
+Remote sharing is off by default. Sharing this computer's readings is available in Lite and Pro; viewing other computers requires Pro and is not included in the standalone Flux Lite download.
 
 When you turn sharing on, Flux listens for connections on your network (port 5199 unless you change it). A viewer can connect only if you pair it with a one-time code shown on this computer, or if it has this computer's shared handshake key. A one-time code expires after five minutes, can be used once, stops working after repeated wrong attempts, and is kept only in memory. Pairing gives that viewer its own key. Connections are encrypted with TLS, and viewers check this computer's certificate.
 
